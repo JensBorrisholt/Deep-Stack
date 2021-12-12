@@ -33,7 +33,7 @@ begin
 end;
 ```
 
-My tool generates a simple class taking care of alle the JSON stuff
+My tool generates a simple class taking care of all the JSON stuff
 
  ```pascal
   TObjectDetectionResult = class(TJsonDTO)
