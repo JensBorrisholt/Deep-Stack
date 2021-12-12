@@ -21,15 +21,15 @@ I got the inspiration for this watching [Alister Christie](http://learndelphi.tv
 ## The Code
 
 While Alister Christie was hand parsing the JSON result I'm using my own tool [Delphi-JsonToDelphiClass
-](https://github.com/JensBorrisholt/Delphi-JsonToDelphiClass) for auto generating generating. So instead of witeteing code like this:
+](https://github.com/JensBorrisholt/Delphi-JsonToDelphiClass) for autogenerating the code So instead of witeteing code like this:
 
 ```pascal
 var j := TJsonObject.ParseJsonValue(Response.ContentAsString);
-var s := j.FindValue('sucess')
+var s := j.FindValue('Success');
 
-if s-AsType<string> = 'false' then
+if s.AsType<string> = 'false' then
 begin
-   ..
+  ---
 end;
 ```
 
